@@ -1,0 +1,25 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Quadro negro",
+    "price": 30.00
+}
+
+###
+GET http://localhost:4002/products
+
+###
+GET http://localhost:4002/products/bbb2d23c-753c-4980-be71-899e4f5a9773
+
+###
+PUT  http://localhost:4002/products/cce84495-2cac-43c8-9ceb-ef66d7f9840f
+content-type: application/json
+
+{
+    "name": "Caderno vermelho",
+    "price": 15.00
+}
+
+###
+DELETE http://localhost:4002/products/cce84495-2cac-43c8-9ceb-ef66d7f9840f
